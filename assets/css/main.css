@@ -3233,7 +3233,7 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			background-color: #212931;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/background.jpg");
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
@@ -3419,8 +3419,8 @@ input, select, textarea {
 			-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease, visibility 0.5s;
 			-ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease, visibility 0.5s;
 			transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
-			opacity: 0;
-			visibility: hidden;
+			/* opacity: 0; */
+			/* visibility: hidden; */
 		}
 
 			#intro.hidden + #header .logo {
