@@ -4668,11 +4668,6 @@ input, select, textarea {
 
 	}
 
-	video {
-		width: 100%;
-		height: auto;
-	}
-
 	.column {
 		float: left;
   		width: 50%;
@@ -4681,4 +4676,103 @@ input, select, textarea {
 
 	.row img {
 		width: 100%;
+	}
+
+	#overview {
+		display: flex;
+    	flex-direction: row;
+    	flex-wrap: wrap;
+    	justify-content: center;
+    	align-items: center;
+	}
+
+	#projDesc {
+		max-width: 500px;
+	}
+
+	.p1, .p2, .p3 {
+		text-align: center;
+		padding: 10px 20px;
+		margin: 0 0 0 0;
+	}
+
+	.p1 {
+		background-color: #ff6347;
+		border-radius: 10px 10px 0 0;
+	}
+
+	.p2 {
+		background-color: cornflowerblue;
+	}
+
+	.p3 {
+		background-color: #C3CBB4;
+		border-radius: 0 0 10px 10px;
+	}
+
+	#overview ul {
+		margin: 0 40px;
+	}
+
+	p#projDesc {
+		margin-right: 20px;
+		max-width: 600px;
+		margin-bottom: 0;
+	}
+
+	.columns {
+		display: flex;
+    	flex-direction: row;
+    	flex-wrap: wrap;
+    	justify-content: center;
+    	align-items: center;
+	}
+
+	#columnItem {
+		max-width: 500px;
+		margin-right: 20px;
+	}
+
+	.post * {
+		text-align: center;
+	}
+
+	hr{
+		margin-bottom: 1.5rem;
+	}
+
+	.title-image{
+		height: 396px;
+		width: 704px;
+		border: 3px solid darkgray;
+		box-shadow: 5px 5px rgb(73 73 73);
+		border-radius: 20px;
+		margin-bottom: 2rem;
+	}
+
+	video {
+		object-fit: contain;
+		overflow-clip-margin: content-box;
+		overflow: clip;
+	}
+
+	@media screen and (max-width: 980px) {
+		.title-image{
+			height: 262px;
+			width: 469px;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		.title-image{
+			height: 181px;
+			width: 284px;
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		.title-image{
+			height: 130px;
+			width: 233px;
+		}
 	}
