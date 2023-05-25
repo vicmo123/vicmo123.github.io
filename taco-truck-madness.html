@@ -61,7 +61,7 @@
 									</div>
 									<div id="columnItem">
 										<h3>Keeping Track</h3>
-										<p>Developing the first-person camera mechanics, etc...</p>
+										<p>During the whole duration of the project we adopted an iterative approach using the agile/scrum method to ensure efficient progress progress. We organized ourselves and tracked our progressing using the time tracking software Jira. Additionally, we used Git as a verison control system to manage code changes and ensure that everyone was working from the same codebase. By using these tools and methodologies, we were able to work efficiently and collaboratively, while also keeping track of our progress and staying on top of any issues that arose during development.</p>
 									</div>
 									<div id="columnItem">
 										<video autoplay muted loop class="image fit">
@@ -70,7 +70,12 @@
 									</div>
 									<div id="columnItem">
 										<h3>ai for the rats</h3>
-										<p>Developing the first-person camera mechanics, etc...</p>
+										<p>
+											I developed the AI for rats in our game using Unity's NavMesh system and a state machine to control their behavior. To make their movement more realistic in the kitchen environment, I used off-mesh links to allow them to jump from counters to the floor. To encourage rats to navigate on the counter instead of always jumping on the floor, I increased the cost for the floor.
+										</p>
+										<p>
+											To manage the flow of the spawns, I implemented a spawn system and a rat manager. The number of rats spawning increases as the game progresses. When a rat spawns, it appears at one of the rat holes randomly. When it is in the exit state, it heads for the closest rat hole and is destroyed when it reaches its destination. 
+										</p>
 									</div>
 									<div id="columnItem">
 										<video autoplay muted loop class="image fit">
@@ -78,7 +83,7 @@
 										</video>
 									</div><div id="columnItem">
 										<h3>ai for the dinosaurs</h3>
-										<p>Developing the first-person camera mechanics, etc...</p>
+										<p>For the dinosaurs in our game, I created an AI system using a state machine and Nav Mesh, similar to the rats. To manage their spawning, I reused the same spawn systems as the rats, with the dinosaurs spawning randomly around the food truck. The dinosaurs would then head towards the truck and wait for food. If they don't receive food for a certain amount of time, they become angry and wander to a random spot around the truck. When they reach their exit point, the dinosaur is destroyed.</p>
 									</div>
 									<div id="columnItem">
 										<video autoplay muted loop class="image fit">
@@ -86,7 +91,7 @@
 										</video>
 									</div><div id="columnItem">
 										<h3>Field of view using Raycast</h3>
-										<p>Developing the first-person camera mechanics, etc...</p>
+										<p>To simulate a field of view for the rats in our game, I implemented a raycast system with a certain range. The rats use these raycasts to locate food within their field of view. If they detect any food, they set it as their target and start chasing it. This system allows the rats to wander around the kitchen and search for food in a more dynamic and engaging way.</p>
 									</div>
 									<div id="columnItem">
 										<video autoplay muted loop class="image fit">
@@ -94,7 +99,7 @@
 										</video>
 									</div><div id="columnItem">
 										<h3>Animation for the dinosaurs</h3>
-										<p>Developing the first-person camera mechanics, etc...</p>
+										<p>As the dinosaur model we chose was not rigged and did not have a humanoid form, we were unable to use animations from Mixamo. To overcome this limitation, I created some custom animation clips within Unity. I also created a smoke particle system that emanates from the ears of the dinosaurs to give an impression of anger.</p>
 									</div>
 									<div id="columnItem">
 										<video autoplay muted loop class="image fit">
@@ -102,7 +107,7 @@
 										</video>
 									</div><div id="columnItem">
 										<h3>Implementing animations</h3>
-										<p>Developing the first-person camera mechanics, etc...</p>
+										<p>I implemented animations for both rats and dinosaurs using Unity's animator controllers, using states and transitions to trigger animations at the appropriate times. To ensure smooth movement, I used blend trees.</p>
 									</div>
 									<div id="columnItem">
 										<video autoplay muted loop class="image fit">
@@ -110,7 +115,7 @@
 										</video>
 									</div><div id="columnItem">
 										<h3>sounds</h3>
-										<p>Developing the first-person camera mechanics, etc...</p>
+										<p>I created a static event system with delegates for the game's audio. This system allows for easy invocation of desired sounds at specific locations. A scriptable object links all audio sources, which are then instantiated in the scene by the sound manager.</p>
 									</div>
 									<div id="columnItem">
 										<video autoplay muted loop class="image fit">
@@ -118,7 +123,7 @@
 										</video>
 									</div><div id="columnItem">
 										<h3>game loop</h3>
-										<p>Developing the first-person camera mechanics, etc...</p>
+										<p>To control the flow of the game, I utilized a state machine that governs the different stages the player progresses through during gameplay. This script serves as the main entry point of the program, informing all systems of the current game stage. Additionally, a timer is employed to regulate the progression of each round. As time passes, the system notifies all other subsystems of the elapsed time, allowing for the game to increase in difficulty. When the player loses, the game resets and a new round begins.</p>
 									</div>
 									<div id="columnItem">
 										<video autoplay muted loop class="image fit">
@@ -126,7 +131,7 @@
 										</video>
 									</div><div id="columnItem">
 										<h3>bound system</h3>
-										<p>Developing the first-person camera mechanics, etc...</p>
+										<p>To make sure to destroy objects that would exit the food truck,I implemented a bound system with a Respawnable component. If an object exits the bounds, the bound system invokes the respawn function from the Raspawnable component, causing the game object to respawn at a specified location. This system is utilized for various items in the game, including the knife, sauce bottle and ingredients.</p>
 									</div>
 									<div id="columnItem">
 										<video autoplay muted loop class="image fit">
@@ -134,7 +139,7 @@
 										</video>
 									</div><div id="columnItem">
 										<h3>World Space UI</h3>
-										<p>Developing the first-person camera mechanics, etc...</p>
+										<p>As part of my contributions to this VR project by creating user interfaces (UI) using Unity's world space UI system. This approach was chosen to display UI elements, like the start button and order board, within the game world instead of overlaying them on the game view, which could detract from immersion. By using world space UI, we achieved a more immersive experience where information and feedback were integrated seamlessly into the game world.</p>
 									</div>
 								</div>
 								<hr>
