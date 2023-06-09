@@ -4777,3 +4777,8 @@ input, select, textarea {
 			width: 233px;
 		}
 	}
+
+#technical-skills{
+	text-align: left;
+	color: black;
+}
