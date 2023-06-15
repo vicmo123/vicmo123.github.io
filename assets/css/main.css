@@ -2820,13 +2820,13 @@ input, select, textarea {
 			}
 
 			ul.icons li .icon:before {
-				width: 2.25rem;
-				height: 2.25rem;
-				line-height: 2.25rem;
+				width: 2.5rem;
+				height: 2.5rem;
+				line-height: 2.5rem;
 				display: inline-block;
 				text-align: center;
 				border-radius: 100%;
-				font-size: 1.25rem;
+				font-size: 1.5rem;
 			}
 
 		ul.icons.alt li .icon:before {
@@ -2834,7 +2834,7 @@ input, select, textarea {
 			-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 			-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 			transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-			font-size: 1rem;
+			font-size: 1.5rem;
 		}
 
 /* List */
@@ -4781,4 +4781,15 @@ input, select, textarea {
 #technical-skills{
 	text-align: left;
 	color: black;
+}
+
+#cv{
+	background-color: #e2e2e2;
+	font-size: large;
+	padding: 10px 0;
+	margin-right: auto;
+	margin-left: auto;
+	width: 75%;
+	display: block;
+	border-radius: 10px;
 }
