@@ -67,33 +67,24 @@
 									</div>
 									<div id="columnItem">
 										<video autoplay muted loop class="image fit">
-											<source src="videos/fps-opengl.mov" type=video/mp4>
+											<source src="videos/taco-truck-madness/rat-ai-demo.mov" type=video/mp4>
 										</video>
 									</div>
 									<div id="columnItem">
 										<h3>ai for the rats</h3>
 										<p>
 											I developed the AI for rats in our game using Unity's NavMesh system and a state machine to control their behavior. To make their movement more realistic in the kitchen environment, I used off-mesh links to allow them to jump from counters to the floor. To encourage rats to navigate on the counter instead of always jumping on the floor, I increased the cost for the floor.
-										</p>
-										<p>
 											To manage the flow of the spawns, I implemented a spawn system and a rat manager. The number of rats spawning increases as the game progresses. When a rat spawns, it appears at one of the rat holes randomly. When it is in the exit state, it heads for the closest rat hole and is destroyed when it reaches its destination. 
+											To simulate a field of view for the rats in our game, I implemented a raycast system with a certain range. The rats use these raycasts to locate food within their field of view. If they detect any food, they set it as their target and start chasing it. This system allows the rats to wander around the kitchen and search for food in a more dynamic and engaging way.
 										</p>
 									</div>
 									<div id="columnItem">
 										<video autoplay muted loop class="image fit">
-											<source src="videos/CowboyGame.mov" type=video/mp4>
+											<source src="videos/taco-truck-madness/dino-ai.mov" type=video/mp4>
 										</video>
 									</div><div id="columnItem">
 										<h3>ai for the dinosaurs</h3>
 										<p>For the dinosaurs in our game, I created an AI system using a state machine and Nav Mesh, similar to the rats. To manage their spawning, I reused the same spawn systems as the rats, with the dinosaurs spawning randomly around the food truck. The dinosaurs would then head towards the truck and wait for food. If they don't receive food for a certain amount of time, they become angry and wander to a random spot around the truck. When they reach their exit point, the dinosaur is destroyed.</p>
-									</div>
-									<div id="columnItem">
-										<video autoplay muted loop class="image fit">
-											<source src="videos/CowboyGame.mov" type=video/mp4>
-										</video>
-									</div><div id="columnItem">
-										<h3>Field of view using Raycast</h3>
-										<p>To simulate a field of view for the rats in our game, I implemented a raycast system with a certain range. The rats use these raycasts to locate food within their field of view. If they detect any food, they set it as their target and start chasing it. This system allows the rats to wander around the kitchen and search for food in a more dynamic and engaging way.</p>
 									</div>
 									<div id="columnItem">
 										<video autoplay muted loop class="image fit">
@@ -105,7 +96,7 @@
 									</div>
 									<div id="columnItem">
 										<video autoplay muted loop class="image fit">
-											<source src="videos/CowboyGame.mov" type=video/mp4>
+											<source src="videos/taco-truck-madness/anim-implementation-demo.mov" type=video/mp4>
 										</video>
 									</div><div id="columnItem">
 										<h3>Implementing animations</h3>
@@ -121,7 +112,7 @@
 									</div>
 									<div id="columnItem">
 										<video autoplay muted loop class="image fit">
-											<source src="videos/CowboyGame.mov" type=video/mp4>
+											<source src="videos/taco-truck-madness/game-loop-demo.mov" type=video/mp4>
 										</video>
 									</div><div id="columnItem">
 										<h3>game loop</h3>
@@ -137,7 +128,7 @@
 									</div>
 									<div id="columnItem">
 										<video autoplay muted loop class="image fit">
-											<source src="videos/taco-truck-madness/taco-truck-madness-bounds.mov" type=video/mp4>
+											<source src="videos/taco-truck-madness/worldspace-ui-demo.mov" type=video/mp4>
 										</video>
 									</div><div id="columnItem">
 										<h3>World Space UI</h3>
