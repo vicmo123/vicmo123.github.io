@@ -39,16 +39,16 @@
 								<div id="overview">
 									<p id="projDesc">Local multiplayer sugar shack themed game, where you have to fight against your friend to make the most syrup cans into a given time. Defend yourself against animals and your opponent using some power-ups such as trampolines, ice balls, horns and more. Developed in a team of 3 using Iterative Development, and Agile Scrum with Jira.</p>
 									<ul id="projDesc">
-										<li>Game Jam Project</li>
-										<li>Keyword</li>
-										<li>Keyword</li>
-										<li>Keyword</li>
-										<li>Keyword</li>
-										<li>Keyword</li>
+										<li>Team of 3</li>
+										<li>Iterative Development</li>
+										<li>Reflection</li>
+										<li>New Input System</li>
+										<li>Local Multiplayer</li>
+										<li>Split-Screen</li>
 									</ul>
 									<div id="projDesc">
-										<p class="p1">Completion: February 2022</p>
-										<p class="p2">Duration: 48 hours</p>
+										<p class="p1">Completion: April 2023</p>
+										<p class="p2">Duration: 2 months</p>
 										<p class="p3">Platform: Unity 3D</p>
 									</div>
 									<div>
@@ -59,7 +59,6 @@
 								<hr>
 								<div>
 									<h2>Contribution: </h2>
-									<p>As part of the development team of three programmers, I was responsible for the following:</p>
 									<div class="columns">
 										<div id="columnItem">
 											<video autoplay muted loop class="image fit">
@@ -67,8 +66,18 @@
 											</video>
 										</div>
 										<div id="columnItem">
-											<h3>enemy ai</h3>
-											<p>To create dynamic and engaging enemies in our game, I have implemented an AI system using a finite state machine. I defined various states and transitions, such as wandering, attacking, rag-dolling, and screaming, that allow enemies to react to different situations in the game.</p>
+											<h3>core architecture</h3>
+											<p>
+												During the planning phase, we carefully considered the architectural design of our project and decided to adopt a Top-Down/Manager style architecture. To implement this, I created a MainEntry script that served as the entry point for the game, utilizing key Unity MonoBehaviour functions like Awake, Start, Update, and FixedUpdate. Additionally, a Game Manager script was developed with PreInitialize, Initialize, Refresh, and Physics Refresh methods, which were called accordingly within the MainEntry script placed in the scene. By making use of singletons and implementing the IFlow interface, we ensured code reusability and maintained regularity across all managers and managed objects. To automate the process of gathering and updating managers, I created a custom C# attribute that utilized reflection in the GameManager, allowing it to dynamically populate a list of managers with the attribute and call their respective IFlow methods. This architecture provided a streamlined and efficient framework for managing the game's systems and contributed to the overall organization and maintainability of the project.</p>
+										</div>
+										<div id="columnItem">
+											<video autoplay muted loop class="image fit">
+												<source src="videos/last-root-standing/lrs-ai.mov" type=video/mp4>
+											</video>
+										</div>
+										<div id="columnItem">
+											<h3>terrain design</h3>
+											<p>To create an immersive and captivating Quebec forest environment for players to explore, I employed a procedural terrain variation generation tool that I had previously developed. The variations are created using Perlin Noise. With this tool, I was able to generate diverse and realistic terrain features. Once the terrain was established, I incorporated a range of imported assets, including various types of trees, rocks, and snow elements, to craft a Low-Poly forest setting. This combination of procedural terrain generation and carefully selected assets resulted in a captivating Quebec forest map, inviting players to embark on an exciting adventure at the sugar shack.</p>	
 										</div>
 										<div id="columnItem">
 											<video autoplay muted loop class="image fit">
@@ -76,8 +85,8 @@
 											</video>
 										</div>
 										<div id="columnItem">
-											<h3>physics bases movement</h3>
-											<p>To control the movement of enemies in our game, I used physics-based movement via rigid bodies. Specifically, a force is applied to each enemy's rigid body until it reaches a certain range from its target. To prevent enemies from clustering too closely together, a function calcules a separation force and applies it to each enemy. This ensures that enemies maintain a safe distance from each other and move in a more natural and realistic way.</p>
+											<h3>sound system</h3>
+											<p> I first made a system that instantiates the sounds in the scene and then the sounds are invoked using delegates. Then system worked well, but I faced some challenges. To overcome the challenges we encountered, I developed two editor tools that proved to be immensely helpful. The first tool focused on simplifying the creation of sound prefabs by automatically generating prefabs with audio source components and the appropriate audio clips. This eliminated the need for manual prefab creation, saving valuable time and effort. The second tool tackled the issue of identifying and accessing available sounds by automatically generating an enum containing the names of all the sound prefabs in the designated audio prefabs folder. This enum could then be easily referenced in the editor or within the codebase, providing a convenient and organized way to manage and utilize sounds throughout the game. These editor tools significantly improved our sound implementation workflow, enhancing efficiency and ensuring a seamless integration of audio elements in our game.</p>
 										</div>
 										<div id="columnItem">
 											<video autoplay muted loop class="image fit">
@@ -85,8 +94,8 @@
 											</video>
 										</div>
 										<div id="columnItem">
-											<h3>collision detection</h3>
-											<p>In order to detect collisions in our game, I have set up three rows of colliders on the root, each with a unique tag that identifies what it represents. When a collision occurs, we can use the tag information to determine what action to take. For example, if an enemy collider collides with the root's right or left collider, we can trigger a coroutine that launches the enemy in the air to the good using Unity's physics system. To create a realistic arc, I use a coroutine to gradually decrease the force over time. Additionally, if the enemy collides with the central collider, the enemy is destroyed and then a particle effect is triggered to create a blood splatter that signifies the enemy's death.</p>
+											<h3>animal system</h3>
+											<p>I implemented an inheritance-based system to create different types of animals in our game, along with a generic state machine to control their behavior. By utilizing Unity's Nav Mesh system, the animals were able to navigate the terrain smoothly. Additionally, I developed an angle control system to precisely manage their movement direction. These combined efforts resulted in a dynamic and immersive ecosystem, where animals exhibited realistic behaviors and interacted with the player and environment in engaging ways.</p>
 										</div>
 										<div id="columnItem">
 											<video autoplay muted loop class="image fit">
@@ -94,15 +103,51 @@
 											</video>
 										</div>
 										<div id="columnItem">
-											<h3>spawn mechanics</h3>
-											<p>To handle spawning mechanics in our game, I used the unit circle to randomly spawn enemies at a set distance from their target. The enemies are spawned in waves, with each wave containing a specific number of enemies. As the game progresses, the number of enemies per wave and their spawning speed increases. The difficulty ramps up over time, with more and more enemies spawning until the player is out of lives. All the spawning mechanics are handeled by an enemy manager script.</p>
+											<h3>the 3 c's</h3>
+											<p>Unity's new input system, I successfully implemented 3rd person camera mechanics in a split-screen setting. To achieve this, I utilized the powerful Cinemachine system, which ensured smooth and dynamic camera movement. Additionally, I developed a custom input handler using the new input system, allowing seamless integration of controller or keyboard/mouse inputs. With the input data in place, I created a player controller that accurately translates the gathered input into player movements, enabling actions such as running, jumping, aiming, and throwing. These combined efforts resulted in an immersive and responsive gameplay experience.</p>
+										</div>
+										<div id="columnItem">
+											<video autoplay muted loop class="image fit">
+												<source src="videos/last-root-standing/lrs-collision.mov" type=video/mp4>
+											</video>
+										</div>
+										<div id="columnItem">
+											<h3>animations</h3>
+											<p>After encountering unsatisfactory results with Mixamo's auto-rigging tool for our lumberjack model, I took on the task of creating all the animations for our game. Although I had limited experience in animations initially, I gradually learned various techniques and tricks that made the process easier over time. Determined to breathe life into our game, I meticulously crafted a range of animations for all the characters. Using Unity's animation system, I seamlessly implemented these animations using animation controllers, ensuring smooth and realistic character movements throughout the game.</p>
+										</div>
+										<div id="columnItem">
+											<video autoplay muted loop class="image fit">
+												<source src="videos/last-root-standing/lrs-spawn.mov" type=video/mp4>
+											</video>
+										</div>
+										<div id="columnItem">
+											<h3>foot print system</h3>
+											<p>To add more life to the game, I implemented a foot print system for the players. Using a sprite-based approach, I created footprints on the ground to simulate realistic footsteps. The footprints were triggered through animation events, and a raycast was employed to detect the ground surface and accurately place the footprints at the appropriate angles. To optimize performance, I utilized the factory/pool pattern, which minimized the overhead of constantly creating new footprints by reusing existing ones. Additionally, I implemented a system where the footprints would disappear after a certain period of time, ensuring a dynamic and visually appealing effect throughout the gameplay.</p>	
+										</div>
+										<div id="columnItem">
+											<video autoplay muted loop class="image fit">
+												<source src="videos/last-root-standing/lrs-collision.mov" type=video/mp4>
+											</video>
+										</div>
+										<div id="columnItem">
+											<h3>ability system</h3>
+											<p>To provide an engaging gameplay experience with various actions and power-ups, I developed an ability system for the players in our game. Each player is equipped with an ability handler that generates random ability scriptables containing information such as Ability Type, sprite, and sound. These abilities are managed through slots, allowing players to see and select them in the UI. When activating an ability, the system checks if it is available and creates an object based on the corresponding ability type using the factory/pool pattern. Players can then utilize the ability and experience its effects. The abilities are categorized as Throwable and UnThrowable, each having different handling mechanisms based on their type. By implementing this ability system, players can engage in a wide range of actions and utilize various power-ups to enhance their gameplay experience.</p>	
+										</div>
+										<div id="columnItem">
+											<video autoplay muted loop class="image fit">
+												<source src="videos/last-root-standing/lrs-spawn.mov" type=video/mp4>
+											</video>
+										</div>
+										<div id="columnItem">
+											<h3>ragdoll system</h3>
+											<p>To add a comedic touch to our game, I introduced a ragdoll system that added a hilarious element to character interactions. The implementation involved carefully setting up ragdoll body parts for each character, incorporating rigid-bodies and character-joints to achieve the desired effect. I then developed a script that efficiently managed the ragdoll state by enabling or disabling the ragdoll effect as needed. For the recovery phase, I employed inverse kinematics techniques. Prior to a character's fall, the data of each body part was stored in a struct. When it came time to recover, each body part smoothly interpolated back to its saved position using co-routines. This playful addition enhanced the comedic moments in the game, creating memorable and entertaining experiences for players.</p>
 										</div>
 									</div>
 								</div>
 								<hr>
 								<h2>closing thougths: </h2>
 								<div class="columns">
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<p>In a local multiplayer sugar shack-themed game, our team of three developers embarked on a two-month journey to create an engaging and competitive experience. Following iterative development and Agile Scrum methodologies with Jira, we accomplished the elaboration of a fully functioning prototype. I spearheaded the core architecture, implementing a Top-Down/Manager style approach that streamlined the game's systems and ensured maintainability. Additionally, I focused on terrain design, leveraging a procedural terrain variation generation tool and imported assets to create an immersive Quebec forest environment. I tackled the sound system challenges by developing editor tools to simplify sound prefab creation and provide easy access to available sounds. I also played a vital role in the implementation of the animal system, creating an inheritance-based structure and a generic state machine for realistic behaviors. Using Unity's new input system, I successfully integrated 3rd person camera mechanics in a split-screen setting, providing a responsive gameplay experience. Furthermore, I took on the task of crafting animations for the game characters, implementing them using Unity's animation system. To enhance immersion, I created a foot print system and an ability system that allowed players to utilize power-ups and perform various actions. Lastly, I introduced a ragdoll system for comedic interactions. Collectively, these contributions brought our game to life, delivering an entertaining and memorable experience for players.</p>
 								</div>
 							</section>
 					</div>

@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Project- Automated Pacman</title>
+		<title>Project - Automated Pacman</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -20,8 +20,8 @@
 							<li class="active"><a href="generic.html">Automated Pacman</a></li>
 						</ul>
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/victormorinprogrammer/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/vicmo123" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
 				<!-- Main -->
@@ -31,37 +31,84 @@
 								<header class="major">
 									<h1>Automated Pacman</h1>
 								</header>
-								<div class="image main">
-									<video width="640" height="360" controls>
-										<source src="videos/AutomatedPacman.mov" type=video/mp4>
-									  </video>
+								<div >
+									<img src="images/pacman.png" alt="" class="title-image"/>
 								</div>
-								<h5>Overview: </h5>
-								<p>Automated Pacman is a game that showcases the use of AI to control the movements of the player and the enemies. The game was developed using C# and Unity, and features a finite state machine for game logic, as well as A* pathfinding for the enemies to navigate the maze. The player's movement is automated as well, with the use of an algorithm that aims for pills while avoiding the enemies. When a pill is eaten, it will target the enemies.</p>
-								<h5>Contribution: </h5>
-								<p>As the developer of the project, my responsibilities included:
-									<ul>
-										<li>Implementing the finite state machine for the enemies and player</li>
-										<li>Developing the A* pathfinding algorithm for the enemies and player</li>
-										<li>Automating the enemies and the player</li>
-										<li>Adding features such as targeting enemies when a special pill is eaten and fleeing when not</li>
+								<hr>
+								<h2>Overview: </h2>
+								<div id="overview">
+									<p id="projDesc">Automated Pacman is a game that showcases the use of AI to control the movements of the player and the enemies. The game was developed using C# and Unity, and features a finite state machine for game logic, as well as A* pathfinding for the enemies to navigate the maze. The player's movement is automated as well, with the use of an algorithm that aims for pills while avoiding the enemies. When a pill is eaten, it will target the enemies.</p>
+									<ul id="projDesc">
+										<li>Game Jam Project</li>
+										<li>Keyword</li>
+										<li>Keyword</li>
+										<li>Keyword</li>
+										<li>Keyword</li>
+										<li>Keyword</li>
 									</ul>
-								</p>
-								<h5>Project Duration: </h5>
-								<p>The project was completed over the course of a few days.</p>
+									<div id="projDesc">
+										<p class="p1">Completion: September 2021</p>
+										<p class="p2">Duration: 3 day</p>
+										<p class="p3">Platform: Unity 3D</p>
+									</div>
+									<div>
+										<!-- Add the link -->
+										<a href="https://github.com/vicmo123/01_Plinko">See project on Github</a>
+									</div>
+									
+								</div>
+								<hr>
+								<div>
+									<h2>Contribution: </h2>
+									<p>This was a solo project. These are things I worked on during this project:</p>
+									<div class="columns">
+										<div id="columnItem">
+											<video autoplay muted loop class="image fit">
+												<source src="videos/last-root-standing/lrs-ai.mov" type=video/mp4>
+											</video>
+										</div>
+										<div id="columnItem">
+											<h3>State machine</h3>
+											<p>To create dynamic and engaging enemies in our game, I have implemented an AI system using a finite state machine. I defined various states and transitions, such as wandering, attacking, rag-dolling, and screaming, that allow enemies to react to different situations in the game.</p>
+										</div>
+										<div id="columnItem">
+											<video autoplay muted loop class="image fit">
+												<source src="videos/last-root-standing/lrs-physics-movement.mov" type=video/mp4>
+											</video>
+										</div>
+										<div id="columnItem">
+											<h3>A* pathfinding</h3>
+											<p>To control the movement of enemies in our game, I used physics-based movement via rigid bodies. Specifically, a force is applied to each enemy's rigid body until it reaches a certain range from its target. To prevent enemies from clustering too closely together, a function calcules a separation force and applies it to each enemy. This ensures that enemies maintain a safe distance from each other and move in a more natural and realistic way.</p>
+										</div>
+										<div id="columnItem">
+											<video autoplay muted loop class="image fit">
+												<source src="videos/last-root-standing/lrs-collision.mov" type=video/mp4>
+											</video>
+										</div>
+										<div id="columnItem">
+											<h3>Game automation</h3>
+											<p>In order to detect collisions in our game, I have set up three rows of colliders on the root, each with a unique tag that identifies what it represents. When a collision occurs, we can use the tag information to determine what action to take. For example, if an enemy collider collides with the root's right or left collider, we can trigger a coroutine that launches the enemy in the air to the good using Unity's physics system. To create a realistic arc, I use a coroutine to gradually decrease the force over time. Additionally, if the enemy collides with the central collider, the enemy is destroyed and then a particle effect is triggered to create a blood splatter that signifies the enemy's death.</p>
+										</div>
+									</div>
+								</div>
+								<hr>
+								<h2>closing thougths: </h2>
+								<div class="columns">
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+								</div>
 							</section>
 					</div>
 				<!-- Footer -->
 					<footer id="footer">
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">vicmo26@gmail.com</a></p>
+								<p><a href="mailto: vicmo26@gmail.com">vicmo26@gmail.com</a></p>
 							</section>
 							<section>
 								<h3>Social</h3>
 								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/victormorinprogrammer/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+									<li><a href="https://github.com/vicmo123" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</section>
 						</section>
