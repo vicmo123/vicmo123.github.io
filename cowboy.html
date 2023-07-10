@@ -39,11 +39,11 @@
 								<div id="overview">
 									<p id="projDesc">Cowboy shoutout is a solo project created using Unity and C#. It is a game that challenges players to shoot it's opponent as quickly as possible. The game features a count down timer, sound effects, and a game reset function that allows the player to play multiple rounds.</p>
 									<ul id="projDesc">
-										<li>Keyword</li>
-										<li>Keyword</li>
-										<li>Keyword</li>
-										<li>Keyword</li>
-										<li>Keyword</li>
+										<li>Solo project</li>
+										<li>State pattern</li>
+										<li>Sound effects</li>
+										<li>Level design</li>
+										<li>Local multiplayer game</li>
 									</ul>
 									<div id="projDesc">
 										<p class="p1">Completion: September 2022</p>
@@ -76,7 +76,7 @@
 										</div>
 										<div id="columnItem">
 											<h3>game mechanics</h3>
-											<p>In order to detect collisions in our game, I have set up three rows of colliders on the root, each with a unique tag that identifies what it represents. When a collision occurs, we can use the tag information to determine what action to take. For example, if an enemy collider collides with the root's right or left collider, we can trigger a coroutine that launches the enemy in the air to the good using Unity's physics system. To create a realistic arc, I use a coroutine to gradually decrease the force over time. Additionally, if the enemy collides with the central collider, the enemy is destroyed and then a particle effect is triggered to create a blood splatter that signifies the enemy's death.</p>
+											<p>In this local multiplayer, inputs are caputred for each player to play. The player that shoots the fastest wins the game. Using the phases from the state machine, I utilized a sphere to indicate the current round's phase to the players. By manipulating the mesh of the sphere through code, the color changes to represent the various phases of the game. Additionally, distinct sound effects have been implemented to signal important events, such as prompting players when it's time to shoot, indicating when a round resets, and providing auditory feedback when a player shoots a bullet. In the event of a player's death, the game allows them to restart a new round simply by pressing any key. These features enhance the gameplay experience by providing visual and auditory cues, facilitating player understanding and engagement throughout each phase of the game.</p>
 										</div>
 										<div id="columnItem">
 											<video autoplay muted loop class="image fit">
@@ -85,14 +85,14 @@
 										</div>
 										<div id="columnItem">
 											<h3>Level design</h3>
-											<p>To handle spawning mechanics in our game, I used the unit circle to randomly spawn enemies at a set distance from their target. The enemies are spawned in waves, with each wave containing a specific number of enemies. As the game progresses, the number of enemies per wave and their spawning speed increases. The difficulty ramps up over time, with more and more enemies spawning until the player is out of lives. All the spawning mechanics are handeled by an enemy manager script.</p>
+											<p>To enhance the visual appeal of the game, I created various prefabs that I used to populate the level. I created many objects such as cacti, cowboys, a skybox, and a sand platform. This use of prefabs resulted in a more immersive and polished game environment, transporting players to a desertic landscape. The inclusion of these objects adds depth, detail, and thematic consistency to the game, elevating the overall visual experience.</p>
 										</div>
 									</div>
 								</div>
 								<hr>
 								<h2>closing thougths: </h2>
 								<div class="columns">
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<p>In summary, the Cowboy Shoutout Game is a solo project developed using Unity and C#. It offers an engaging experience where players aim to shoot opponents quickly. The game features a countdown timer, sound effects, and a game reset function for multiple rounds. The implementation of the state pattern ensures smooth game flow, while the sphere indicator and distinct sound effects enhance player engagement. The level design, utilizing various prefabs such as cacti and cowboys, creates an immersive desertic landscape. Overall, the Cowboy Shoutout Game showcases the developer's proficiency in Unity and delivers a polished and enjoyable gaming experience.</p>
 								</div>
 							</section>
 					</div>

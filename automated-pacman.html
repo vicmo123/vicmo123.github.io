@@ -39,12 +39,11 @@
 								<div id="overview">
 									<p id="projDesc">Automated Pacman is a game that showcases the use of AI to control the movements of the player and the enemies. The game was developed using C# and Unity, and features a finite state machine for game logic, as well as A* pathfinding for the enemies to navigate the maze. The player's movement is automated as well, with the use of an algorithm that aims for pills while avoiding the enemies. When a pill is eaten, it will target the enemies.</p>
 									<ul id="projDesc">
-										<li>Game Jam Project</li>
-										<li>Keyword</li>
-										<li>Keyword</li>
-										<li>Keyword</li>
-										<li>Keyword</li>
-										<li>Keyword</li>
+										<li>Solo project</li>
+										<li>Finite state machine</li>
+										<li>A* pathfinding</li>
+										<li>Raycast</li>
+										<li>Automation</li>
 									</ul>
 									<div id="projDesc">
 										<p class="p1">Completion: September 2021</p>
@@ -69,7 +68,7 @@
 										</div>
 										<div id="columnItem">
 											<h3>State machine</h3>
-											<p>To create dynamic and engaging enemies in our game, I have implemented an AI system using a finite state machine. I defined various states and transitions, such as wandering, attacking, rag-dolling, and screaming, that allow enemies to react to different situations in the game.</p>
+											<p>In our AI in video game class, we were given the freedom to select a project to showcase our comprehension of the state machine concept. I decided to embark on this exciting endeavor by creating an automated Pacman game, where the player competes against enemies in an autonomous manner. To accomplish the desired behaviors for both the player and the enemies, I implemented two types of finite state machines. </p>
 										</div>
 										<div id="columnItem">
 											<video autoplay muted loop class="image fit">
@@ -78,7 +77,7 @@
 										</div>
 										<div id="columnItem">
 											<h3>A* pathfinding</h3>
-											<p>To control the movement of enemies in our game, I used physics-based movement via rigid bodies. Specifically, a force is applied to each enemy's rigid body until it reaches a certain range from its target. To prevent enemies from clustering too closely together, a function calcules a separation force and applies it to each enemy. This ensures that enemies maintain a safe distance from each other and move in a more natural and realistic way.</p>
+											<p>To facilitate the movement of all characters across the map, I integrated the A* pathfinding algorithm using a node system. This algorithm efficiently calculates the optimal route for each character to reach their respective targets while considering the presence of walls as obstacles. By implementing the A* algorithm, the characters are able to navigate the game environment with ease, avoiding obstacles and selecting the best possible paths. This addition enhances the overall gameplay experience by ensuring smooth and intelligent movement for all characters.</p>
 										</div>
 										<div id="columnItem">
 											<video autoplay muted loop class="image fit">
@@ -86,15 +85,15 @@
 											</video>
 										</div>
 										<div id="columnItem">
-											<h3>Game automation</h3>
-											<p>In order to detect collisions in our game, I have set up three rows of colliders on the root, each with a unique tag that identifies what it represents. When a collision occurs, we can use the tag information to determine what action to take. For example, if an enemy collider collides with the root's right or left collider, we can trigger a coroutine that launches the enemy in the air to the good using Unity's physics system. To create a realistic arc, I use a coroutine to gradually decrease the force over time. Additionally, if the enemy collides with the central collider, the enemy is destroyed and then a particle effect is triggered to create a blood splatter that signifies the enemy's death.</p>
+											<h3>Behaviour optimization</h3>
+											<p>In order to enhance the natural and intelligent gameplay of the characters, I implemented behavior optimizations. This involved incorporating distinct targets and a line of sight mechanic using raycasts. By utilizing these techniques, the enemies were able to prioritize high-priority objects, such as pills and pellets, while also reacting strategically based on their current state. For instance, the player character would target pills and pellets while evading enemies when in the wandering state. However, after consuming a power pellet, the player character would switch to a chasing behavior, actively pursuing and attacking the enemies. This implementation adds depth and complexity to the gameplay, creating a more realistic gamplay style.</p>
 										</div>
 									</div>
 								</div>
 								<hr>
 								<h2>closing thougths: </h2>
 								<div class="columns">
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<p>Automated Pacman is a solo project developed using Unity and C#, demonstrating the application of AI in controlling player and enemy movements. The game features a finite state machine for game logic, A* pathfinding for efficient navigation, and behavior optimizations including distinct targets and a line of sight mechanic. With automated player movement, strategic decision-making, Automated Pacman was for me a nice challenge that I am pround of having completed.</p>
 								</div>
 							</section>
 					</div>
