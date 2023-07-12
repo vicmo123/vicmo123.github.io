@@ -32,16 +32,14 @@
 								<h1>Finite State Machine</h1>
 							</header>
 							<div >
-								<video autoplay muted loop class="title-image">
-									<source src="videos/fps-opengl.mov" type=video/mp4>
-								  </video>
+								<img src="images/fsm.png" alt="" class="title-image"/>
 							</div>
 							<hr>
 							<h2>Overview: </h2>
 							<div id="overview">
 								<p id="projDesc">In this simple game, the player's objective is to escape from the enemy. The enemy's behavior is governed by a finite state machine, which controls its actions and decision-making process. Additionally, the enemy utilizes the A* algorithm for movement, enabling it to navigate the game environment effectively. The combination of the finite state machine and A* algorithm ensures that the enemy dynamically responds to the player's movements and attempts to capture them.</p>
 								<ul id="projDesc">
-									<li>Keyword</li>
+									<li>Solo project</li>
 									<li>Keyword</li>
 									<li>Keyword</li>
 									<li>Keyword</li>
@@ -49,14 +47,16 @@
 									<li>Keyword</li>
 								</ul>
 								<div id="projDesc">
-									<p class="p1">Completion: May 2022</p>
-									<p class="p2">Duration: 1 week</p>
+									<p class="p1">Completion: November 2022</p>
+									<p class="p2">Duration: 1 day</p>
 									<p class="p3">Platform: Unity 3D</p>
+								</div>
+								<div>
+									<a href="https://github.com/vicmo123/FinalProject">See project on Github</a>
 								</div>
 							</div>
 							<hr>
 							<h2>Contribution: </h2>
-							<p>Working in a team of two people, I was responsible for the following:</p>
 							<div class="columns">
 								<div id="columnItem">
 									<video autoplay muted loop class="image fit">
@@ -64,41 +64,26 @@
 									</video>
 								</div>
 								<div id="columnItem">
-									<h3>first-person camera</h3>
-									<p>Developing the first-person camera mechanics, etc...</p>
+									<h3>Finite State Machine</h3>
+									<p>This project's primary emphasis was on implementing a finite state machine. The game revolves around the player moving around and evading the enemy. The enemy, controlled by its own finite state machine, exhibits behavior aimed at capturing the player. Additionally, the enemy employs raycasts to detect the player's presence. When chasing the player, the enemy gets bored after some time.</p>
 								</div>
 								<div id="columnItem">
 									<video autoplay muted loop class="image fit">
-										<source src="videos/CowboyGame.mov" type=video/mp4>
+										<source src="videos/fps-opengl.mov" type=video/mp4>
 									</video>
-								</div><div id="columnItem">
-									<h3>uv mapping tool</h3>
-									<p>Developing the first-person camera mechanics, etc...</p>
 								</div>
-								<a href="canon.html" class="image fit" id="columnItem"><img src="images/pic07.jpg" alt="" /></a>
 								<div id="columnItem">
-									<h3>text generation tool</h3>
-									<p>Developing the first-person camera mechanics, etc...</p>
+									<h3>Movement</h3>
+									<p>For moving around, the player and the enemy employ distinct methods for movement. The player utilizes user input to navigate in four directions across the map, allowing for flexible movement. On the other hand, the enemy employs the A* algorithm and a node-based system to navigate the map. This algorithm enables the enemy to find the optimal path while avoiding walls, creating intelligent and obstacle-aware movement. Both the player and the enemy can freely move around the map within the constraints of the game's environment, ensuring engaging gameplay while preventing passage through walls.</p>
 								</div>
-								<a href="canon.html" class="image fit" id="columnItem"><img src="images/pic07.jpg" alt="" /></a>
 								<div id="columnItem">
-									<h3>game mechanics</h3>
-									<p>Developing the first-person camera mechanics, etc...</p>
+									<video autoplay muted loop class="image fit">
+										<source src="videos/fps-opengl.mov" type=video/mp4>
+									</video>
 								</div>
-								<a href="canon.html" class="image fit" id="columnItem"><img src="images/pic07.jpg" alt="" /></a>
 								<div id="columnItem">
-									<h3>in game ui</h3>
-									<p>Developing the first-person camera mechanics, etc...</p>
-								</div>
-								<a href="canon.html" class="image fit" id="columnItem"><img src="images/pic07.jpg" alt="" /></a>
-								<div id="columnItem">
-									<h3>procedurally generated city</h3>
-									<p>Developing the first-person camera mechanics, etc...</p>
-								</div>
-								<a href="canon.html" class="image fit" id="columnItem"><img src="images/pic07.jpg" alt="" /></a>
-								<div id="columnItem">
-									<h3>Cube collision detection</h3>
-									<p>Developing the first-person camera mechanics, etc...</p>
+									<h3>Map</h3>
+									<p>The map was designed using some tiles. Using the editor you can choose the size you want for the map and the map is generated according to the selected size. The walls are added procedurally to give a different layout to the map every time.</p>
 								</div>
 							</div>
 							<hr>

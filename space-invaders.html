@@ -32,9 +32,7 @@
 								<h1>Space Invaders</h1>
 							</header>
 							<div >
-								<video autoplay muted loop class="title-image">
-									<source src="videos/fps-opengl.mov" type=video/mp4>
-								  </video>
+								<img src="images/space-invaders.png" alt="" class="title-image"/>
 							</div>
 							<hr>
 							<h2>Overview: </h2>
@@ -44,70 +42,50 @@
 									Additionally, the game features a wrap-around system for both the enemy ships and the player. This means that when any of these entities reach the edge of the screen, they wrap around to the opposite side, allowing for seamless movement and engagement without any boundary restrictions.
 								</p>
 								<ul id="projDesc">
-									<li>Keyword</li>
-									<li>Keyword</li>
-									<li>Keyword</li>
-									<li>Keyword</li>
-									<li>Keyword</li>
-									<li>Keyword</li>
+									<li>Solo project</li>
+									<li>Scrolling tile map</li>
+									<li>Flocking AI</li>
+									<li>Graphics library</li>
+									<li>Top-Down/Manager</li>
+									<li>Singleton</li>
 								</ul>
 								<div id="projDesc">
-									<p class="p1">Completion: May 2022</p>
-									<p class="p2">Duration: 1 week</p>
-									<p class="p3">Platform: Unity 3D</p>
+									<p class="p1">Completion: March 2023</p>
+									<p class="p2">Duration: 3 days</p>
+									<p class="p3">Platform: SDL2/C++</p>
+								</div>
+								<div>
+									<a href="https://github.com/vicmo123/FinalProject">See project on Github</a>
 								</div>
 							</div>
 							<hr>
 							<h2>Contribution: </h2>
-							<p>Working in a team of two people, I was responsible for the following:</p>
 							<div class="columns">
+								<a href="canon.html" class="image fit" id="columnItem"><img src="images/pic07.jpg" alt="" /></a>
 								<div id="columnItem">
-									<video autoplay muted loop class="image fit">
-										<source src="videos/fps-opengl.mov" type=video/mp4>
-									</video>
-								</div>
-								<div id="columnItem">
-									<h3>first-person camera</h3>
-									<p>Developing the first-person camera mechanics, etc...</p>
-								</div>
-								<div id="columnItem">
-									<video autoplay muted loop class="image fit">
-										<source src="videos/CowboyGame.mov" type=video/mp4>
-									</video>
-								</div><div id="columnItem">
-									<h3>uv mapping tool</h3>
-									<p>Developing the first-person camera mechanics, etc...</p>
+									<h3>Core architecture</h3>
+									<p>For this project, I adopted the Top-Down/Manager architecture as the core framework. The implementation revolves around the concept of managers, which are Singleton objects responsible for handling various aspects of the game. Additionally, I developed a robust system of Game Objects, inspired by Unity, to effectively manage and track all the objects within the game. This Game Objects system facilitated the rapid implementation of new systems and objects, enabling efficient development and integration of additional features. By employing the Top-Down/Manager style and the Game Objects system, the project achieved a structured and scalable architecture, allowing for flexibility and ease of expansion in the game's development process.</p>
 								</div>
 								<a href="canon.html" class="image fit" id="columnItem"><img src="images/pic07.jpg" alt="" /></a>
 								<div id="columnItem">
-									<h3>text generation tool</h3>
-									<p>Developing the first-person camera mechanics, etc...</p>
+									<h3>Map design</h3>
+									<p>Wanting to make the game more polished, I delved into the fascinating subject of scrolling tile maps. Using GIMP, I created a set of tiles and assembled them into a tile map file. Leveraging this tile map, I successfully achieved the illusion of infinite scrolling, providing the sensation that the spaceship is continuously flying. This technique enhances the game's immersion and creates a dynamic and captivating gameplay experience for players.</p>
 								</div>
 								<a href="canon.html" class="image fit" id="columnItem"><img src="images/pic07.jpg" alt="" /></a>
 								<div id="columnItem">
-									<h3>game mechanics</h3>
-									<p>Developing the first-person camera mechanics, etc...</p>
+									<h3>Enemy AI</h3>
+									<p>In the game, players are faced with the task of battling against aliens, and to control the enemy behavior, I implemented AI using the flocking algorithm. By utilizing the flocking algorithm and incorporating a separation factor, the aliens are able to move collectively as a cohesive unit while maintaining a certain distance from each other. This creates a visually appealing effect of the aliens moving as a mass while avoiding collisions. Additionally, the implementation of a wrap-around system for the enemies allows them to continuously circle around the map, making their paths unpredictable and adding a significant level of challenge for players. The combination of flocking AI and the wrap-around system creates a dynamic and engaging gameplay experience as players strategize and adapt to the unpredictable movements of the alien forces.</p>
 								</div>
 								<a href="canon.html" class="image fit" id="columnItem"><img src="images/pic07.jpg" alt="" /></a>
 								<div id="columnItem">
-									<h3>in game ui</h3>
-									<p>Developing the first-person camera mechanics, etc...</p>
-								</div>
-								<a href="canon.html" class="image fit" id="columnItem"><img src="images/pic07.jpg" alt="" /></a>
-								<div id="columnItem">
-									<h3>procedurally generated city</h3>
-									<p>Developing the first-person camera mechanics, etc...</p>
-								</div>
-								<a href="canon.html" class="image fit" id="columnItem"><img src="images/pic07.jpg" alt="" /></a>
-								<div id="columnItem">
-									<h3>Cube collision detection</h3>
-									<p>Developing the first-person camera mechanics, etc...</p>
+									<h3>Player</h3>
+									<p>In this Space Invaders remake, players assume control of a ship and are granted the freedom to navigate the map using user input. Similar to the enemies, the ship benefits from the wrap-around system, allowing for seamless movement. To combat the alien forces, the player possesses the ability to shoot bullets. By utilizing circle collision detection, collisions between bullets and aliens, as well as between the player and the aliens, are accurately detected. This collision detection mechanism adds a crucial gameplay element, enabling players to strategically engage and eliminate the alien threats.</p>
 								</div>
 							</div>
 							<hr>
 							<h2>closing thougths: </h2>
 							<div class="columns">
-								<p>The project was completed over the course of one week.</p>
+								<p>This modern remake of the classic game Space Invaders is featuring numerous enhancements to deliver an engaging gameplay experience. Developed using SDL2 and C++, the game embraces a Top-Down/Manager architecture for efficient management of game elements. Notably, the game incorporates a scrolling tile map, creating a dynamic and ever-changing environment. The enemy ships utilize flocking AI, exhibiting collective behavior while engaging the player, and a wrap-around system adds unpredictability to their paths. The player controls a ship, benefiting from the same wrap-around system, and can shoot bullets using circle collision detection for precise interactions with both enemies and aliens. With a combination of architectural design, captivating map creation, advanced enemy AI, and engaging player mechanics, the game presents a challenging and immersive experience for players to enjoy.</p>
 							</div>
 						</section>
 				</div>
