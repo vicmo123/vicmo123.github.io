@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Project - The Last Root Standing</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<header id="header">
+					</header>
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Gallery</a></li>
+							<li class="active"><a href="">The Last Root Standing</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/victormorinprogrammer/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/vicmo123" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+				<!-- Main -->
+					<div id="main">
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>The Last Root Standing</h1>
+								</header>
+								<div >
+									<img src="images/the-last-root-standing.jpg" alt="" class="title-image"/>
+								</div>
+								<hr>
+								<h2>Overview: </h2>
+								<div id="overview">
+									<p id="projDesc">"The Last Root Standing" is a fun and comedic game developed as part of the Global Game Jam project at Unity Montreal offices. In this root-themed game, the player controls a root that must defend itself against an army of lumberjacks. The game was built using C#, Unity and WebGL.</p>
+									<ul id="projDesc">
+										<li>Team of 7</li>
+										<li>Global Game Jam</li>
+										<li>WebGL</li>
+										<li>AI implementation</li>
+										<li>Collision detection</li>
+										<li>Spawn mechanics</li>
+										<li>Physics-based movement</li>
+									</ul>
+									<div id="projDesc">
+										<p class="p1">Completion: February 2022</p>
+										<p class="p2">Duration: 48 hours</p>
+										<p class="p3">Platform: Unity 3D</p>
+									</div>
+									<div>
+										<a href="https://trypants.itch.io/thelastrootstanding">Try the game</a><br>
+										<a href="https://github.com/AnthonyStonge/GGJ2023">See project on Github</a>
+									</div>
+									
+								</div>
+								<hr>
+								<div>
+									<h2>Contribution: </h2>
+									<div class="columns">
+										<div id="columnItem">
+											<video autoplay muted loop class="image fit">
+												<source src="videos/last-root-standing/lrs-ai.mov" type=video/mp4>
+											</video>
+										</div>
+										<div id="columnItem">
+											<h3>enemy ai</h3>
+											<p>To create dynamic and engaging enemies in our game, I have implemented an AI system using a finite state machine. I defined various states and transitions, such as wandering, attacking, rag-dolling, and screaming, that allow enemies to react to different situations in the game.</p>
+										</div>
+										<div id="columnItem">
+											<video autoplay muted loop class="image fit">
+												<source src="videos/last-root-standing/lrs-physics-movement.mov" type=video/mp4>
+											</video>
+										</div>
+										<div id="columnItem">
+											<h3>physics bases movement</h3>
+											<p>To control the movement of enemies in our game, I used physics-based movement via rigid bodies. Specifically, a force is applied to each enemy's rigid body until it reaches a certain range from its target. To prevent enemies from clustering too closely together, a function calcules a separation force and applies it to each enemy. This ensures that enemies maintain a safe distance from each other and move in a more natural and realistic way.</p>
+										</div>
+										<div id="columnItem">
+											<video autoplay muted loop class="image fit">
+												<source src="videos/last-root-standing/lrs-collision.mov" type=video/mp4>
+											</video>
+										</div>
+										<div id="columnItem">
+											<h3>collision detection</h3>
+											<p>In order to detect collisions in our game, I have set up three rows of colliders on the root, each with a unique tag that identifies what it represents. When a collision occurs, we can use the tag information to determine what action to take. For example, if an enemy collider collides with the root's right or left collider, we can trigger a coroutine that launches the enemy in the air to the good using Unity's physics system. To create a realistic arc, I use a coroutine to gradually decrease the force over time. Additionally, if the enemy collides with the central collider, the enemy is destroyed and then a particle effect is triggered to create a blood splatter that signifies the enemy's death.</p>
+										</div>
+										<div id="columnItem">
+											<video autoplay muted loop class="image fit">
+												<source src="videos/last-root-standing/lrs-spawn.mov" type=video/mp4>
+											</video>
+										</div>
+										<div id="columnItem">
+											<h3>spawn mechanics</h3>
+											<p>To handle spawning mechanics in our game, I used the unit circle to randomly spawn enemies at a set distance from their target. The enemies are spawned in waves, with each wave containing a specific number of enemies. As the game progresses, the number of enemies per wave and their spawning speed increases. The difficulty ramps up over time, with more and more enemies spawning until the player is out of lives. All the spawning mechanics are handeled by an enemy manager script.</p>
+										</div>
+									</div>
+								</div>
+								<hr>
+								<h2>closing thougths: </h2>
+								<div class="columns">
+									<p>"The Last Root Standing" was a thrilling and enjoyable game development experience. Being part of a talented team of seven individuals, we were able to bring this root-themed game to life during the Global Game Jam project at Unity Montreal offices. It was a challenging yet rewarding endeavor that allowed us to showcase our skills and creativity within a tight timeframe of 48 hours.</p>
+								</div>
+							</section>
+					</div>
+				<!-- Footer -->
+					<footer id="footer">
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto: vicmo26@gmail.com">vicmo26@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/victormorinprogrammer/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+									<li><a href="https://github.com/vicmo123" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+			</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
