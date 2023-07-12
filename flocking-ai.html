@@ -40,7 +40,7 @@
 								<p id="projDesc">This project serves as a demonstration of the flocking algorithm implementation. It was developed as part of an AI in video game class and features boids that exhibit flocking behavior based on three rules: cohesion, alignment, and separation. Each rule is assigned a weight, and the user has the ability to adjust these values within the editor to observe various behavioral outcomes.</p>
 								<ul id="projDesc">
 									<li>Solo project</li>
-									<li>Keyword</li>
+									<li>Flocking algorithm</li>
 									<li>Keyword</li>
 									<li>Keyword</li>
 									<li>Keyword</li>
@@ -48,7 +48,7 @@
 								</ul>
 								<div id="projDesc">
 									<p class="p1">Completion: November 2022</p>
-									<p class="p2">Duration: 1 week</p>
+									<p class="p2">Duration: 2 days</p>
 									<p class="p3">Platform: Unity 3D</p>
 								</div>
 								<div>
@@ -57,7 +57,6 @@
 							</div>
 							<hr>
 							<h2>Contribution: </h2>
-							<p>Working in a team of two people, I was responsible for the following:</p>
 							<div class="columns">
 								<div id="columnItem">
 									<video autoplay muted loop class="image fit">
@@ -66,13 +65,22 @@
 								</div>
 								<div id="columnItem">
 									<h3>flocking algorithm</h3>
-									<p>Developing the first-person camera mechanics, etc...</p>
+									<p>The algorithm implemented in this project draws inspiration from the classic flocking algorithm developed by Craig Reynolds. This algorithm aims to replicate the collective behavior observed in bird flocks or fish schools. It achieves this by defining a set of rules that govern the movement and interaction of entities within the simulation. These rules include cohesion, alignment, and separation. Cohesion drives entities towards the average position of their nearby neighbors, fostering a sense of togetherness. Alignment aligns the direction of entities with the average direction of their neighbors, promoting synchronized movement. Separation ensures that entities maintain a safe distance from each other to avoid collisions. By combining these rules, the flocking algorithm generates emergent behaviors such as swarming, schooling, or flocking, resulting in visually captivating and realistic group dynamics.</p>
+								</div>
+								<div id="columnItem">
+									<video autoplay muted loop class="image fit">
+										<source src="videos/fps-opengl.mov" type=video/mp4>
+									</video>
+								</div>
+								<div id="columnItem">
+									<h3>optimizations</h3>
+									<p>To optimize the performance of the flocking algorithm in this project, I implemented some optimizations. One such optimization involved defining circle sizes for each zone surrounding the boids. By doing so, I reduced the number of calculations needed for each boid by only considering neighboring boids within their respective zones. This helped streamline the computation and improved the overall efficiency of the algorithm. Additionally, I introduced a blind spot behind each boid, mimicking a realistic behavior. This blind spot prevented boids from reacting to entities directly behind them, adding an element of realism to their movement and interactions.</p>
 								</div>
 							</div>
 							<hr>
 							<h2>closing thougths: </h2>
 							<div class="columns">
-								<p>The project was completed over the course of one week.</p>
+								<p>In conclusion, this project successfully implemented and optimized the flocking algorithm, enhancing the realism and believability of collective behavior in a simulated environment. The project not only solidified my comprehension of the algorithm but also allowed me to apply it effectively in another project, specifically the space invaders game developed in C++. Witnessing the convincing replication of collective behavior in the alien ships through the utilization of the flocking algorithm was a moment of pride and accomplishment. This experience has further strengthened my skills and confidence in the realm of AI and game development.</p>
 							</div>
 						</section>
 				</div>
