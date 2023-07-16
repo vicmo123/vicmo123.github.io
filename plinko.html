@@ -61,12 +61,12 @@
 									<div class="columns">
 										<div id="columnItem">
 											<video autoplay muted loop class="image fit">
-												<source src="videos/last-root-standing/lrs-ai.mov" type=video/mp4>
+												<source src="videos/plinko/plinko-physics-movement.mov" type=video/mp4>
 											</video>
 										</div>
 										<div id="columnItem">
-											<h3>Physics-base movement</h3>
-											<p>To enable movement for the ball in the game, I utilized Unity's physics system. By attaching rigid-bodies to the ball prefab, I established a solid foundation for physics-based interactions. To control the ball's movement, I implemented a script that gathered keyboard inputs and applied the appropriate forces to move the ball in the desired direction. When the player releases the ball, gravity comes into play, causing it to naturally fall downwards.</p>
+											<h3>Physics-base movement & collision detection</h3>
+											<p>To enable realistic movement for the ball in the game, I utilized Unity's physics system by attaching rigid bodies to the ball prefab. This allowed for physics-based interactions, including gravity affecting the ball when it is released. Additionally, I implemented colliders and trigger zones using Unity's physics system. Colliders were used on the pins, balls, and walls to handle accurate collisions, ensuring responsive interactions. Trigger zones were implemented to detect the ball's entry into designated winning or losing areas, allowing for tracking and determining game outcomes based on its location. Overall, these integrations enhanced the gameplay experience with natural movement, realistic collisions, and meaningful game interactions.</p>
 										</div>
 										<div id="columnItem">
 											<video autoplay muted loop class="image fit">
@@ -76,15 +76,6 @@
 										<div id="columnItem">
 											<h3>Map design</h3>
 											<p>By creating prefabs for different components of the map, I successfully designed the game board, incorporating walls, pins, and distinct zones for winning and losing. Once the board was complete, I proceeded to enhance the overall visual aesthetics of the game by creating a skybox. </p>
-										</div>
-										<div id="columnItem">
-											<video autoplay muted loop class="image fit">
-												<source src="videos/last-root-standing/lrs-collision.mov" type=video/mp4>
-											</video>
-										</div>
-										<div id="columnItem">
-											<h3>collision detection</h3>
-											<p>Also using Unity's physics system, I familiarized myself with the utilization of colliders and trigger zones. Colliders were employed on the pins, balls, and walls to accurately handle collisions between these objects. By configuring the colliders appropriately, I ensured realistic and responsive interactions. In addition, trigger zones were implemented to detect whether the ball entered specific areas designated as winning or losing zones. These trigger zones provided a mechanism for tracking and determining game outcomes based on the ball's location.</p>
 										</div>
 										<div id="columnItem">
 											<video autoplay muted loop class="image fit">

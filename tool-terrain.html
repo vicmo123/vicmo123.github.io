@@ -61,40 +61,17 @@
 									<div class="columns">
 										<div id="columnItem">
 											<video autoplay muted loop class="image fit">
-												<source src="videos/last-root-standing/lrs-ai.mov" type=video/mp4>
+												<source src="videos/maple-wars/terrain-design.mov" type=video/mp4>
 											</video>
 										</div>
 										<div id="columnItem">
-											<h3>enemy ai</h3>
+											<h3>Problem</h3>
 											<p>To create dynamic and engaging enemies in our game, I have implemented an AI system using a finite state machine. I defined various states and transitions, such as wandering, attacking, rag-dolling, and screaming, that allow enemies to react to different situations in the game.</p>
-										</div>
-										<div id="columnItem">
-											<video autoplay muted loop class="image fit">
-												<source src="videos/last-root-standing/lrs-physics-movement.mov" type=video/mp4>
-											</video>
-										</div>
-										<div id="columnItem">
-											<h3>physics bases movement</h3>
-											<p>To control the movement of enemies in our game, I used physics-based movement via rigid bodies. Specifically, a force is applied to each enemy's rigid body until it reaches a certain range from its target. To prevent enemies from clustering too closely together, a function calcules a separation force and applies it to each enemy. This ensures that enemies maintain a safe distance from each other and move in a more natural and realistic way.</p>
-										</div>
-										<div id="columnItem">
-											<video autoplay muted loop class="image fit">
-												<source src="videos/last-root-standing/lrs-collision.mov" type=video/mp4>
-											</video>
-										</div>
-										<div id="columnItem">
-											<h3>collision detection</h3>
-											<p>In order to detect collisions in our game, I have set up three rows of colliders on the root, each with a unique tag that identifies what it represents. When a collision occurs, we can use the tag information to determine what action to take. For example, if an enemy collider collides with the root's right or left collider, we can trigger a coroutine that launches the enemy in the air to the good using Unity's physics system. To create a realistic arc, I use a coroutine to gradually decrease the force over time. Additionally, if the enemy collides with the central collider, the enemy is destroyed and then a particle effect is triggered to create a blood splatter that signifies the enemy's death.</p>
-										</div>
-										<div id="columnItem">
-											<video autoplay muted loop class="image fit">
-												<source src="videos/last-root-standing/lrs-spawn.mov" type=video/mp4>
-											</video>
-										</div>
-										<div id="columnItem">
-											<h3>spawn mechanics</h3>
-											<p>To handle spawning mechanics in our game, I used the unit circle to randomly spawn enemies at a set distance from their target. The enemies are spawned in waves, with each wave containing a specific number of enemies. As the game progresses, the number of enemies per wave and their spawning speed increases. The difficulty ramps up over time, with more and more enemies spawning until the player is out of lives. All the spawning mechanics are handeled by an enemy manager script.</p>
-										</div>
+                                            <h3>Solution</h3>
+											<p>To create dynamic and engaging enemies in our game, I have implemented an AI system using a finite state machine. I defined various states and transitions, such as wandering, attacking, rag-dolling, and screaming, that allow enemies to react to different situations in the game.</p>
+                                            <h3>how does it work?</h3>
+											<p>To create dynamic and engaging enemies in our game, I have implemented an AI system using a finite state machine. I defined various states and transitions, such as wandering, attacking, rag-dolling, and screaming, that allow enemies to react to different situations in the game.</p>
+                                        </div>
 									</div>
 								</div>
 								<hr>
