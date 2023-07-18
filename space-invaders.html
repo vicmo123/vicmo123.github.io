@@ -31,7 +31,7 @@
 							<header class="major">
 								<h1>Space Invaders</h1>
 							</header>
-							<div >
+							<div>
 								<img src="images/space-invaders.png" alt="" class="title-image"/>
 							</div>
 							<hr>
@@ -55,29 +55,43 @@
 									<p class="p2">Duration: 3 days</p>
 									<p class="p3">Platform: C++/SDL2</p>
 								</div>
-								<div>
+								<div id="projDesc">
 									<a href="https://github.com/vicmo123/FinalProject">See project on Github</a>
 								</div>
 							</div>
 							<hr>
 							<h2>Contribution: </h2>
 							<div class="columns">
-								<a href="canon.html" class="image fit" id="columnItem"><img src="images/pic07.jpg" alt="" /></a>
+								<div id="columnItem">
+									<img src="images/space-invaders-core-architecture.png" alt="" class="image fit"/>
+								</div>
 								<div id="columnItem">
 									<h3>Core architecture</h3>
 									<p>For this project, I adopted the Top-Down/Manager architecture as the core framework. The implementation revolves around the concept of managers, which are Singleton objects responsible for handling various aspects of the game. Additionally, I developed a robust system of Game Objects, inspired by Unity, to effectively manage and track all the objects within the game. This Game Objects system facilitated the rapid implementation of new systems and objects, enabling efficient development and integration of additional features. By employing the Top-Down/Manager style and the Game Objects system, the project achieved a structured and scalable architecture, allowing for flexibility and ease of expansion in the game's development process.</p>
 								</div>
-								<a href="canon.html" class="image fit" id="columnItem"><img src="images/pic07.jpg" alt="" /></a>
+								<div id="columnItem">
+									<video autoplay muted loop class="image fit">
+										<source src="videos/space-invaders/space-invaders-map.mov" type=video/mp4>
+									</video>
+								</div>
 								<div id="columnItem">
 									<h3>Map design</h3>
 									<p>Wanting to make the game more polished, I delved into the fascinating subject of scrolling tile maps. Using GIMP, I created a set of tiles and assembled them into a tile map file. Leveraging this tile map, I successfully achieved the illusion of infinite scrolling, providing the sensation that the spaceship is continuously flying. This technique enhances the game's immersion and creates a dynamic and captivating gameplay experience for players.</p>
 								</div>
-								<a href="canon.html" class="image fit" id="columnItem"><img src="images/pic07.jpg" alt="" /></a>
+								<div id="columnItem">
+									<video autoplay muted loop class="image fit">
+										<source src="videos/space-invaders/space-invaders-enemy-ai.mov" type=video/mp4>
+									</video>
+								</div>
 								<div id="columnItem">
 									<h3>Enemy AI</h3>
 									<p>In the game, players are faced with the task of battling against aliens, and to control the enemy behavior, I implemented AI using the flocking algorithm. By utilizing the flocking algorithm and incorporating a separation factor, the aliens are able to move collectively as a cohesive unit while maintaining a certain distance from each other. This creates a visually appealing effect of the aliens moving as a mass while avoiding collisions. Additionally, the implementation of a wrap-around system for the enemies allows them to continuously circle around the map, making their paths unpredictable and adding a significant level of challenge for players. The combination of flocking AI and the wrap-around system creates a dynamic and engaging gameplay experience as players strategize and adapt to the unpredictable movements of the alien forces.</p>
 								</div>
-								<a href="canon.html" class="image fit" id="columnItem"><img src="images/pic07.jpg" alt="" /></a>
+								<div id="columnItem">
+									<video autoplay muted loop class="image fit">
+										<source src="videos/space-invaders/space-invaders-player.mov" type=video/mp4>
+									</video>
+								</div>
 								<div id="columnItem">
 									<h3>Player</h3>
 									<p>In this Space Invaders remake, players assume control of a ship and are granted the freedom to navigate the map using user input. Similar to the enemies, the ship benefits from the wrap-around system, allowing for seamless movement. To combat the alien forces, the player possesses the ability to shoot bullets. By utilizing circle collision detection, collisions between bullets and aliens, as well as between the player and the aliens, are accurately detected. This collision detection mechanism adds a crucial gameplay element, enabling players to strategically engage and eliminate the alien threats.</p>

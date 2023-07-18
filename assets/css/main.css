@@ -4793,3 +4793,7 @@ input, select, textarea {
 	display: block;
 	border-radius: 10px;
 }
+
+#projDesc a{
+	margin: 0 20px; 
+}
